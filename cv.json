@@ -1,0 +1,160 @@
+{
+  "basics": {
+    "name": "Ela Nahir",
+    "label": "Creative Designer",
+    "image": "../public/portrait.webp",
+    "email": "hello@elanahir.com",
+    "phone": "677110345",
+    "url": "https://elanahir.com",
+    "summary": "A summary of John Doe…",
+    "location": {
+      "address": "San Xosé 1, 2D",
+      "postalCode": "36206",
+      "city": "Vigo",
+      "countryCode": "ES",
+      "region": "Galicia"
+    },
+    "profiles": [{
+      "network": "Instagram",
+      "username": "elanahir.art",
+      "url": "https://instragram.com/elanahir.art"
+    },
+{
+      "network": "LinkedIn",
+      "username": "elanahir",
+      "url": "https://linkedin.com/in/elanahir"
+    },
+  {
+      "network": "GitHub",
+      "username": "elanahir",
+      "url": "https://github.com/ElaNahir"
+    }]
+  },
+  "work": [{
+    "name": "Ela Nahir Studio",
+    "position": "Freelance",
+    "url": "https://elanahir.com",
+    "startDate": "2020-05-01",
+    "endDate": "until Date",
+    "summary": "Illustration, Lettering and Graphic Design",
+    "highlights": [
+      "Sales increment of more than 20%",
+      "HQ Award by the Marketing and Product team"
+    ]
+  },
+{
+    "name": "American Vintage",
+    "position": "Store Manager",
+    "url": "https://americanvintage-store.com",
+    "startDate": "2022-06-15",
+    "endDate": "2024-08-30",
+    "summary": "Responsible of the store and team, managing all the ",
+    "highlights": [
+      "Sales increment of more than 20%",
+      "HQ Award by the Marketing and Product team"
+    ]
+  }],
+
+  "education": [{
+    "institution": "University of Fine Arts of Pontevedra",
+    "url": "https://esdemga.com/",
+    "area": "Fashion Design",
+    "studyType": "Bachelor",
+    "startDate": "2011-01-01",
+    "endDate": "2013-11-27",
+    "score": "7.7",
+    "courses": [
+      "Ilustración de Moda - Juanjo Oliva",
+      "... - Silvia Prada"
+    ]
+  },
+{
+    "institution": "University of Fine Arts of Pontevedra",
+    "url": "https://esdemga.com/",
+    "area": "Fashion Design",
+    "studyType": "Bachelor",
+    "startDate": "2011-01-01",
+    "endDate": "2013-11-27",
+    "score": "7.7",
+    "courses": [
+      "Ilustración de Moda - Juanjo Oliva",
+      "... - Silvia Prada"
+    ]
+  },
+{
+    "institution": "University of Fine Arts of Pontevedra",
+    "url": "https://esdemga.com/",
+    "area": "Fashion Design",
+    "studyType": "Bachelor",
+    "startDate": "2011-01-01",
+    "endDate": "2013-11-27",
+    "score": "7.7",
+    "courses": [
+      "Ilustración de Moda - Juanjo Oliva",
+      "... - Silvia Prada"
+    ]
+  }],
+  "awards": [{
+    "title": "Lettering Legend",
+    "date": "2014-11-01",
+    "awarder": "Company",
+    "summary": "There is no spoon."
+  }],
+  "certificates": [{
+    "name": "Certificate",
+    "date": "2021-11-07",
+    "issuer": "Company",
+    "url": "https://certificate.com"
+  }],
+  "publications": [{
+    "name": "Publication",
+    "publisher": "Company",
+    "releaseDate": "2014-10-01",
+    "url": "https://publication.com",
+    "summary": "Description…"
+  }],
+  "skills": [{
+    "name": "Web Development",
+    "level": "Master",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  }],
+  "languages": [{
+    "language": "English",
+    "fluency": "Fluent conversation"
+  }],
+  "interests": [{
+    "name": "Cinema",
+    "keywords": [
+      "Animation",
+      "Comedy",
+      "Thriller"
+    ]
+  }],
+  "interests": [{
+    "name": "Music",
+    "keywords": [
+      "Indie Rock",
+      "Country / Folk",
+      "Blues",
+      "Jazz"
+    ]
+  }],
+  "references": [{
+    "name": "Denis Violle",
+    "reference": "My Area Manager on AMV. Reference on Linkedin"
+  }],
+  "projects": [{
+    "name": "Project",
+    "startDate": "2019-01-01",
+    "endDate": "2021-01-01",
+    "description": "Description...",
+    "highlights": [
+      "Won award at AIHacks 2016"
+    ],
+    "url": "https://project.com/"
+  }]
+}
