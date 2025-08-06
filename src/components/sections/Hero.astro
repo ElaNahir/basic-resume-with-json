@@ -17,6 +17,14 @@ GitHub,
 LinkedIn,
 Instagram,
 }
+
+const linkedInfo = profiles.find(({ network }) => network === "LinkedIn")
+const linkedUrl = linkedInfo?.url
+
+const instaInfo = profiles.find(({ network }) => network === "Instagram")
+const instaUrl = instaInfo?.url
+
+const printInfo = [email, phone, linkedUrl, instaUrl].filter(Boolean).join("•")
 ---
 
 <Section>
@@ -29,6 +37,9 @@ Instagram,
                 {city}, {region}
             </span>
             <footer>
+                <div class="print">
+                   {email} &bull; {phone} &bull; {linkedUrl} &bull; {instaUrl}
+                </div>
                 {
                     email && (
                         <a 
@@ -123,6 +134,8 @@ Instagram,
     }
 
     footer {
+        color: #888;
+        font-size: 0.65rem;
         display: flex;
         gap: 4px;
         margin-top: 8px;
@@ -146,5 +159,17 @@ Instagram,
         background: #eee;
         border: 1px solid #ddd;
     }
+
+    @media print {
+		.print {
+			display: block;
+		}
+
+        footer a {
+            display: none;
+        }
+	}
+
+
 
 </style>
