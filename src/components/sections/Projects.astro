@@ -5,7 +5,7 @@ import { projects } from "@cv"
 
 ---
 
-<Section title="Projects">
+<Section title="Projects" class="bottom-section">
     <ul>
         {
             projects.map(({url, description, highlights, name, isActive}) => {
@@ -102,5 +102,9 @@ import { projects } from "@cv"
         padding: 0.2rem 0.6rem;
     }
 
+
+.bottom-section {
+    margin-bottom: 32px;
+}
 </style>
 

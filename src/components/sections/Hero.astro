@@ -2,6 +2,7 @@
 import { basics } from "@cv"
 import Section from '@/components/Section.astro'
 
+import Globe from '@/icons/globe.svg'
 import Mail from '@/icons/envelope.svg'
 import Phone from '@/icons/telephone.svg'
 import GitHub from '@/icons/github.svg'
@@ -9,7 +10,7 @@ import LinkedIn from '@/icons/linkedin.svg'
 import Instagram from '@/icons/instagram.svg'
 import Location from '@/icons/geo-alt.svg'
 
-const { name, label, image, email, phone, summary, location, profiles } = basics
+const { name, label, image, email, phone, url, location, profiles } = basics
 const { city, region } = location
 
 const SOCIAL_ICONS: Record<string, any> = {
@@ -24,7 +25,7 @@ const linkedUrl = linkedInfo?.url
 const instaInfo = profiles.find(({ network }) => network === "Instagram")
 const instaUrl = instaInfo?.url
 
-const printInfo = [email, phone, linkedUrl, instaUrl].filter(Boolean).join("•")
+/*const printInfo = [email, phone, linkedUrl, instaUrl].filter(Boolean).join("•")*/
 ---
 
 <Section>
@@ -38,8 +39,21 @@ const printInfo = [email, phone, linkedUrl, instaUrl].filter(Boolean).join("•"
             </span>
             <footer>
                 <div class="print">
-                   {email} &bull; {phone} &bull; {linkedUrl} &bull; {instaUrl}
+                {url} &bull; {email} &bull; {phone}  {linkedUrl} &bull; {instaUrl}
                 </div>
+
+                {
+                    url && (
+                        <a 
+                        href={url}
+                        title={`Visit the ${name} web`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                            <Globe />
+                        </a>
+                    )
+                }
                 {
                     email && (
                         <a 
@@ -120,7 +134,7 @@ const printInfo = [email, phone, linkedUrl, instaUrl].filter(Boolean).join("•"
     img {
         aspect-ratio: 1 / 1;
         object-fit: cover;
-        width: 128px;
+        width: 150px;
         border-radius: 6px;
     }
 
@@ -160,6 +174,10 @@ const printInfo = [email, phone, linkedUrl, instaUrl].filter(Boolean).join("•"
         border: 1px solid #ddd;
     }
 
+    .print {
+        display: none;
+    }
+
     @media print {
 		.print {
 			display: block;
@@ -169,7 +187,6 @@ const printInfo = [email, phone, linkedUrl, instaUrl].filter(Boolean).join("•"
             display: none;
         }
 	}
-
 
 
 </style>

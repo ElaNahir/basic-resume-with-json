@@ -1,34 +1,34 @@
 {
   "basics": {
     "name": "Ela Nahir",
-    "label": "Creative Designer",
+    "label": "Diseñadora Creativa",
     "image": "../public/portrait.webp",
     "email": "hello@elanahir.com",
     "phone": "677110345",
     "url": "https://elanahir.com",
-    "summary": "Sometimes flowers illustrator, sometimes lettering artist. Some days I design clothes and patterns for my personal brand, and other days I create logotypes and visual identity for other companies. Menus drawer on the blackboards of local coffee shops and professional notes writer on my home fridge door. Perfectionist artist by day, idealistic dreamer by night. A lot of different works, but always the same reason: the creativity and the ability to create great handmade things, through traditional or digital processes. My goal: to be able to live off of what really makes me happy and never stop learning.",
+    "summary": "Diseño gráfico, branding, ilustración, pintura, lettering, caligrafía, sign painting, ilustración comercial y publicitaria, diseño de moda, diseño de estampados textiles... Todo lo que he realizado, y me ha hecho sentir realizada, a lo largo de mi carrera. Tanto con proyectos profesionales como personales. Y tantas otras cosas que me quedan por explorar. No podría elegir sólo una, porque todas ellas tienen algo en común: la creatividad y la posibilidad de crear cosas increíbles hechas a mano y con corazón, ya sea mediante procesos tradicionales o digitales. Las posibilidades hoy en día son infinitas, y mi deseo es probarlas todas. Mi objetivo: vivir de lo que realmente me hace feliz y no parar nunca de aprender.",
     "location": {
       "address": "San Xosé 1, 2D",
       "postalCode": "36206",
       "city": "Vigo",
       "countryCode": "ES",
-      "region": "Galicia"
+      "region": "Spain"
     },
     "profiles": [
       {
         "network": "Instagram",
         "username": "elanahir.art",
-        "url": "https://instragram.com/elanahir.art"
+        "url": "https://www.instragram.com/elanahir.art"
       },
       {
         "network": "LinkedIn",
         "username": "elanahir",
-        "url": "https://linkedin.com/in/elanahir"
+        "url": "https://www.linkedin.com/in/elanahir"
       },
       {
         "network": "GitHub",
         "username": "elanahir",
-        "url": "https://github.com/ElaNahir"
+        "url": "https://www.github.com/ElaNahir"
       }
     ]
   },
@@ -39,13 +39,16 @@
       "url": "https://elanahir.com",
       "startDate": "2020",
       "endDate": null,
-      "summary": "Illustration, Lettering and Graphic Design",
+      "summary": "Gestiono un pequeño estudio de diseño enfocado en Lettering, Ilustración y Diseño Gráfico, actividad que complemento paralelamente con otros trabajos.",
       "highlights": [
-        "Murals",
-        "Lettering",
-        "Illustration",
-        "Branding",
-        "Graphic Design"
+        "Decoración Mural y Sign Painting para comercios y particulares",
+        "Cursos de lettering presencial",
+        "Lettering y caligrafía digital y tradicional",
+        "Diseño de tipografía",
+        "Diseño de logotipos e identidad visual",
+        "Diseño de estampados textiles",
+        "Ilustración"
+
       ]
     },
     {
@@ -54,98 +57,123 @@
       "url": "https://americanvintage-store.com",
       "startDate": "2022-06-15",
       "endDate": "2024-08-30",
-      "summary": "Responsible of the store and team, managing all the ",
+      "summary": "Como responsable de tienda para la marca de moda francesa, tuve la oportunidad de adquirir experiencia en un puesto de responsabilidad, y desarrollar habilkidades como gestión y supervisión de un equipo, análisis y reportes de venta, visual merchandising, técnicas de venta, un excepcional servicio de atención al cliente y una especial atención al detalle.",
       "highlights": [
-        "Sales increment of more than 20%",
-        "HQ Award by the Marketing and Product departments",
-        "Lidership",
-        "Creative Thinking",
-        "Problem Solving"
+        "Liderazgo",
+        "Mentoría",
+        "Pensamiento analítico",
+        "Solución de problemas",
+        "Incremento en ventas en más de un 20% anual",
+        "Premio a mi trabajo por parte de Headquarters"
+        
       ]
     },
     {
       "name": "Espacio Gamma",
-      "position": "Brand Identity Designer",
+      "position": "Diseñadora de identidad de marca",
       "url": "",
       "startDate": "2018",
       "endDate": "2019",
-      "summary": "Working for a start-up focused on productivity for companies defining and designing the complete brand identity, products and stationary materials and digital content.",
+      "summary": "Trabajos independientes para una Start-Up dedicada a la Productividad y a la Creación de Valor de personas y equipos",
       "highlights": [
-        "Brand Design",
-        "Stationary design",
-        "Coaching Session at Trivago Headquarters"
+        "Definición de la identidad de marca",
+        "Diseño de material corporativo",
+        "Diseño de producto",
+        "Coaching Session por parte del equipo creativo de Trivago en oficinas centrales, Düsseldorf"
       ]
     }
   ],
   "education": [
     {
-      "institution": "University of Fine Arts of Pontevedra",
-      "url": "https://esdemga.com/",
-      "area": "Fashion Design",
-      "studyType": "Bachelor",
-      "startDate": "2011-01-01",
-      "endDate": "2013-11-27",
-      "score": "7.7",
+      "institution": "Grupo Método",
+      "url": "",
+      "area": "Confección y publicación de páginas Web",
+      "studyType": "Certificado de Profesionalidad",
+      "startDate": "2025",
+      "endDate": "null",
+      "score": "",
       "courses": [
-        "Ilustración de Moda - Juanjo Oliva",
-        "... - Silvia Prada"
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP"
       ]
     },
     {
-      "institution": "University of Fine Arts of Pontevedra",
-      "url": "https://esdemga.com/",
-      "area": "Fashion Design",
-      "studyType": "Bachelor",
-      "startDate": "2011-01-01",
-      "endDate": "2013-11-27",
-      "score": "7.7",
+      "institution": "Mancomunidad del área intermunicipal de Vigo",
+      "url": "https://maiv.com/",
+      "area": "Diseño de Productos Gráficos - ARGG0110",
+      "studyType": "Certificado de Profesionalidad",
+      "startDate": "2019-01-01",
+      "endDate": "2020-11-27",
+      "score": "",
       "courses": [
-        "Ilustración de Moda - Juanjo Oliva",
-        "... - Silvia Prada"
+        "Photoshop",
+        "Illustrator",
+        "Diseño de Logotipos",
+        "Identidad de marca"
       ]
     },
     {
-      "institution": "University of Fine Arts of Pontevedra",
+      "institution": "ESDEMGA - Facultad de Bellas Artes de Pontevedra",
       "url": "https://esdemga.com/",
-      "area": "Fashion Design",
-      "studyType": "Bachelor",
-      "startDate": "2011-01-01",
+      "area": "Diseño textil y Moda",
+      "studyType": "Título Universitario propio de la Universidad de Vigo",
+      "startDate": "2008-01-01",
       "endDate": "2013-11-27",
       "score": "7.7",
       "courses": [
-        "Ilustración de Moda - Juanjo Oliva",
-        "... - Silvia Prada"
+        "Diseño de moda",
+        "Patronaje",
+        "Diseño Gráfico",
+        "Fotografía",
+        "Análisis de tendencias",
+        "Psicología de la percepción",
+        "Administración y dirección de empresas",
+        "Antropología y sociología del consumo"
       ]
     }
   ],
   "awards": [
     {
-      "title": "Lettering Legend",
-      "date": "2014-11-01",
-      "awarder": "Company",
-      "summary": "There is no spoon."
+      "title": "Lettering Leader",
+      "date": "2021",
+      "awarder": "TypeFolk",
+      "summary": "Premio otorgado a una de mis obras por un jurado profesional de la industria de la Typografía"
+    },
+    {
+      "title": "Lettering Live Wire",
+      "date": "2021",
+      "awarder": "TypeFolk",
+      "summary": "Reconocimiento a la pieza de lettering con la mayor puntuación de la comunidad de TypeFolk en redes sociales."
     }
   ],
   "certificates": [
     {
-      "name": "Certificate",
-      "date": "2021-11-07",
-      "issuer": "Company",
-      "url": "https://certificate.com"
+      "name": "Marketing-Mix básico en internet y gestión de clientes online",
+      "date": "2021",
+      "issuer": "Academia Colón",
+      "url": "-"
+    },
+    {
+      "name": "Social Media arketing",
+      "date": "2021",
+      "issuer": "Academia Colón",
+      "url": "-"
     }
   ],
   "publications": [
     {
       "name": "Publication",
       "publisher": "Company",
-      "releaseDate": "2014-10-01",
+      "releaseDate": "2021",
       "url": "https://publication.com",
       "summary": "Description…"
     }
   ],
   "skills": [
     {
-      "name": "Creativity",
+      "name": "Creatividad",
       "level": "Master",
       "keywords": [
         "HTML",
@@ -154,13 +182,31 @@
       ]
     },
     {
-      "name": "Web Development",
-      "level": "Master",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ]
+      "name": "Habilidades comunicativas"
+    },
+    {
+      "name": "Atención al detalle"
+    },
+    {
+      "name": "Pensamiento analítico"
+    },
+    {
+      "name": "Exigencia"
+    },
+    {
+      "name": "Meticulosidad"
+    },
+    {
+      "name": "Curiosidad"
+    },
+    {
+      "name": "Positivismo"
+    },
+    {
+      "name": "Responsabilidad"
+    },
+    {
+      "name": "Compromiso"
     }
   ],
   "languages": [
@@ -177,9 +223,7 @@
         "Comedy",
         "Thriller"
       ]
-    }
-  ],
-  "interests": [
+    },
     {
       "name": "Music",
       "keywords": [
@@ -197,15 +241,6 @@
     }
   ],
   "projects": [
-    {
-      "name": "Project",
-      "isActive": true,
-      "description": "Description jghghb gb uvhbiybvg uygb yigbyihb i hygbiygb ioygb ibygb vbjuhy gutgfh bgiy fi vbi ytgyigb iygf ufgu vutf u vigyutgfuhb ...",
-      "highlights": [
-        "Won award at AIHacks 2016"
-      ],
-      "url": "https://project.com/"
-    },
     {
       "name": "Project",
       "startDate": "2025",
@@ -230,40 +265,13 @@
       "url": "https://project.com/"
     },
     {
-      "name": "Project",
-      "startDate": "2025",
-      "endDate": "2025",
-      "isActive": true,
-      "description": "Description...",
+      "name": "Fuck Karma",
+      "isActive": false,
+      "description": "Diseño de una colección de moda completa de diez estilismos como proyecto final de estudios en el Desfile de Moda Debut14",
       "highlights": [
         "Won award at AIHacks 2016"
       ],
-      "url": "https://project.com/"
-    },
-    {
-      "name": "Project",
-      "startDate": "2025",
-      "endDate": "2025",
-      "isActive": true,
-      "description": "Description jghghb gb uvhbiybvg uygb yigbyihb i hygbiygb ioygb i",
-      "highlights": [
-        "Won award at AIHacks 2016",
-        "Won award at AIHacks",
-        "Won at AIHacks 2016"
-      ],
-      "url": "https://project.com/"
-    },
-    {
-      "name": "Project",
-      "startDate": "2025",
-      "endDate": "2025",
-      "isActive": true,
-      "description": "Description...",
-      "highlights": [
-        "Won award at AIHacks 2016",
-        "Won at AIHacks 2016"
-      ],
-      "url": "https://project.com/"
+      "url": "-"
     }
   ]
 }

@@ -1,16 +1,122 @@
+---
+import { basics } from '@cv'
+
+const { profiles } = basics
+
+/* import GitHub from '@/icons/github.svg'
+import LinkedIn from '@/icons/linkedin.svg'
+import Instagram from '@/icons/instagram.svg' */
+
+const SOCIAL_ICONS: Record<string, string> = {
+GitHub: `<svg  xmlns="http://www.w3.org/2000/svg" style="margin-right: 8px" width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>`,
+LinkedIn: `<svg  xmlns="http://www.w3.org/2000/svg"  style="margin-right: 8px" width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" /></svg>`,
+Instagram: `<svg  xmlns="http://www.w3.org/2000/svg"  style="margin-right: 8px" width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg>`,
+}
+
+
+
+const profilesInfo = profiles.map(({network, url }) => {
+    const icon = SOCIAL_ICONS[network]
+    const firstLetter = network[0].toUpperCase()
+
+    return {
+        id: network,
+        section: 'Social',
+        title: `Visit ${network}`,
+        url,
+        icon,
+        hotkey: `ctrl+${firstLetter}`,
+        handler: () => {
+            window.open(url, "_blank")
+        },
+    }
+})
+---
+
 <footer>
-
-
+<p>Pulsa <kbd>Cmd</kbd> + <kbd>K</kbd> para abrir la paleta de comandos</p>
 </footer>
 
+<ninja-keys data-info ={JSON.stringify(profilesInfo)} placeholder="Buscar comando" hideBreadcrumbs>
+    
+</ninja-keys>
 
 <script>
+import "ninja-keys"
 
+const ninja = document.querySelector("ninja-keys")
+
+if (ninja !== null ) {
+    const info = ninja.getAttribute('data-info') ?? "[]"
+    const parsedInfo = JSON.parse(info)
+
+    const data = parsedInfo.map((item: any) => {
+      return {
+        ... item,
+        handler: () => {
+            window.open(item.url, "_blank")
+        },
+      }  
+    })
+
+    ninja.data = [
+        {
+            id: "print",
+            title: "Print Document",
+            icon: `<svg style="margin-right: 4px" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m10.5 0a48.536 48.536 0 0 0-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5Zm-3 0h.008v.008H15V10.5Z" />
+            </svg>`,
+            hotkey: "ctrl+P",
+            section: "Acciones",
+            handler: () => {
+            window.print()
+            },
+        },
+        ...data
+    ]
+}
 
 </script>
 
-
 <style>
+@media print {
+	ninja-keys {
+		display: none;
+	}
+}
 
+@keyframes fadeIn {
+    from {
+        opacity: 0,
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+footer p {
+    background: #fdfdfd;
+    border-top: 1px solid #eee;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding-block: 8px;
+    text-align: center;
+    font-size: .85rem;
+
+    view-timeline-name: --revealing;
+    view-timeline-axis: block;
+
+    animation: linear 0.3s fadeIn;
+    animation-timeline: --revealing;
+    animation-range: entry 100% cover 10%;
+}
+
+kbd {
+    background: #eee;
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-size: 12px;
+}
 
 </style>
