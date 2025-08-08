@@ -87,10 +87,10 @@
     {
       "institution": "Grupo Método",
       "url": "",
-      "area": "Confección y publicación de páginas Web",
+      "area": "Confección y Publicación de Páginas Web - IFCD0110",
       "studyType": "Certificado de Profesionalidad",
       "startDate": "2025",
-      "endDate": "null",
+      "endDate": null,
       "score": "",
       "courses": [
         "HTML",
@@ -156,7 +156,7 @@
       "url": "-"
     },
     {
-      "name": "Social Media arketing",
+      "name": "Social Media Marketing",
       "date": "2021",
       "issuer": "Academia Colón",
       "url": "-"
@@ -242,36 +242,37 @@
   ],
   "projects": [
     {
-      "name": "Project",
+      "name": "The Branding Project",
       "startDate": "2025",
       "endDate": "2025",
       "isActive": true,
-      "description": "Description jghghb gb uvhbiybvg uygb yigbyihb i hygbiygb ioygb i",
+      "description": "Proyecto personal de creación de imagen de marga e identidad visual",
       "highlights": [
-        "Won award at 2016",
-        "Won at AIHacks 2016"
+        "Branding",
+        "Packaging"
       ],
       "url": "https://project.com/"
     },
     {
-      "name": "Project",
-      "startDate": "2025",
-      "endDate": "2025",
-      "isActive": true,
-      "description": "Description jghghb gb uvhbiybvg uygb jghghb gb uvhbiybvg uygb",
+      "name": "36 Days Of Type",
+      "startDate": "2023",
+      "endDate": "2023",
+      "isActive": false,
+      "description": "Cuarto año consecutivo participando en el Challenge de Instagram que consiste en diseñar todas las letras y números del alfabeto latino durante 36 días seguidos",
       "highlights": [
-        "Won award at AIHacks 2016"
+        "Creación de una tipografía completa"
       ],
-      "url": "https://project.com/"
+      "url": "https://.com/"
     },
     {
-      "name": "Fuck Karma",
+      "name": "FucKarma",
       "isActive": false,
       "description": "Diseño de una colección de moda completa de diez estilismos como proyecto final de estudios en el Desfile de Moda Debut14",
       "highlights": [
-        "Won award at AIHacks 2016"
+        "Desfile Debut14",
+        "Branding completo"
       ],
-      "url": "-"
+      "url": "https://www.instragram.com/fuck.karma"
     }
   ]
 }

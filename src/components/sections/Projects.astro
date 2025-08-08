@@ -40,8 +40,9 @@ import { projects } from "@cv"
 </Section>
 
 <style>
+   
 
-    ul {
+ul {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 1rem;
@@ -72,11 +73,15 @@ import { projects } from "@cv"
     }
 
     article a {
-        color: #111;
+        color: var(--color-subtitle);
+
+        &:hover {
+            color: #7bbdc7;
+        }
     }
 
     article p {
-        font-size: 0.75rem;
+        font-size: 0.8rem;
         line-height: 1.2rem;
         margin-bottom: 4px;
 
@@ -95,7 +100,7 @@ import { projects } from "@cv"
 
     article footer span {
         border-radius: 6px;
-        background: #eee;
+        background: var(--color-hl);
         color: #444;
         font-size: 0.6rem;
         font-weight: 500;
@@ -103,8 +108,5 @@ import { projects } from "@cv"
     }
 
 
-.bottom-section {
-    margin-bottom: 32px;
-}
 </style>
 

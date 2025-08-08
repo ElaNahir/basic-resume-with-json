@@ -5,32 +5,37 @@ import { skills } from "@cv";
 ---
 
 <Section title="Skills">
-    <ul>
+    <div>
         {
             skills.map(({ name }) => (
 
-            <li>
+            <p>
                 <span>{name}</span>
-            </li>
+            </p>
             ))
         }
-    </ul>
+    </div>
 </Section>
 
 <style>
-    ul {
+    div {
         display: inline-flex;
         gap: 8px;
         flex-wrap: wrap;
+        margin-top: .8rem;
     }
 
-    li {
-        
+    p {
         border-radius: 6px;
-        background: #eee;
+        background: var(--color-hl);
         color: #000;
-        font-size: .8rem;
+        font-size: .9rem;
         font-weight: 500;
         padding: 0.2rem 0.6rem;
+        transition: all .6s ease;
+
+        &:hover {
+        transform: scale(120%);
+        }
     }
 </style>

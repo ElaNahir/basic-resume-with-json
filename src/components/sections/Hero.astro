@@ -120,13 +120,13 @@ const instaUrl = instaInfo?.url
     }
     
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     h2 {
-        color: #444;
+        color: #fff;
         font-weight: 500;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         text-wrap: balance;
 
     }
@@ -134,8 +134,9 @@ const instaUrl = instaInfo?.url
     img {
         aspect-ratio: 1 / 1;
         object-fit: cover;
-        width: 150px;
+        width: 180px;
         border-radius: 6px;
+        margin-right: 20px;
     }
 
     span {
@@ -156,7 +157,7 @@ const instaUrl = instaInfo?.url
     }
 
     footer a {
-        color: #777;
+        color: var(--color-bg);
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -170,7 +171,8 @@ const instaUrl = instaInfo?.url
     }
 
     footer a:hover {
-        background: #eee;
+        transform: rotate(360deg);
+        background: var(--color-hl);
         border: 1px solid #ddd;
     }
 

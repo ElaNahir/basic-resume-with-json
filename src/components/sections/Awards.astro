@@ -1,0 +1,80 @@
+---
+import Section from "../Section.astro"
+
+import { awards } from "@cv"
+---
+
+<Section title="Awards">
+    <ul>
+        {
+            awards.map(
+                ({ title, awarder, date, summary }) => {
+
+                    return (
+                        <li>
+                            <article>
+                                <header>
+                                    <div>
+                                        <h3>{title}</h3>
+                                        <h4>{awarder}</h4>
+                                    </div>
+                                    <p>{date}</p>
+                                </header>
+                                <footer>
+                                    <p>{summary}</p>
+                                    
+                                </footer>
+                            </article>
+                        </li>
+                    );
+                },
+            )
+        }
+    </ul>
+</Section>
+
+<style>
+    ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin-inline: -16px;
+    }
+
+    article {
+        border-radius: 8px;
+        border: 1px solid #f2f2f2;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        height: 100%;
+        min-height: 100%;
+    }
+
+    article header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        flex: 1;
+    }
+
+     article footer  {
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        font-size: 0.6rem;
+    }
+
+    h3 {
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
+    h4 {
+        font-weight: 400;
+        color: #222;
+    }
+
+</style>
