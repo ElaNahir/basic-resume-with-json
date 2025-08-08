@@ -2,7 +2,7 @@
   "basics": {
     "name": "Ela Nahir",
     "label": "Diseñadora Creativa",
-    "image": "../public/portrait.webp",
+    "image": "/portrait.webp",
     "email": "hello@elanahir.com",
     "phone": "677110345",
     "url": "https://elanahir.com",
